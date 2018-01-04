@@ -1,11 +1,26 @@
 <html>
 
+<script language="JavaScript">
+    function add()
+    {
+        var q1 = eval(document.getElementById("q1").value);
+        var q2 = eval(document.getElementById("q2").value);
+        var a1 = q1 + q2;
+        document.getElementById("ans").innerHTML = a1;
+    }
+</script>
+
 <body>
-Hello World!!
-<br>
-<img width="400" height="300" src="flower.jpg"/>
-<br>
-<a href="sec.html">第二個網頁</a>
+Hello World!!<br>
+<img width="400" height="300" src="flower.jpg"/><br>
+<a href="sec.html">第二個網頁</a><br>
+<input type="text" id="q1"><br>
++<br>
+<input type="text" id="q2"><br>
+<input type="button" id="btn" onclick="add()" ><br>
+<span id="ans"></span>
+
+
 </body>
 
 </html>
